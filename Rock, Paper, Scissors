@@ -1,0 +1,19 @@
+import random
+dict1={1:"rock",2:"paper",3:"scissor"}
+h=0
+c=0
+for i in range(5):
+    a=random.randint(1,3)
+    human=input()
+    if (human==dict1[1] and a==3)or(human==dict1[2] and a==1)or (human==dict1[3]and a==2):
+        h+=1
+    elif human==dict1[a]:
+        pass
+    else:
+        c+=1
+if h>c:
+    print("you win")
+elif h==c:
+    print("you tie")
+else:
+    print("you lose")
